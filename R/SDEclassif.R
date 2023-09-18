@@ -1,5 +1,5 @@
-#' Name: SDEclassif
-#' Title: A plug-in type classifier for a multiclass classification of SDE paths.
+#' SDEclassif
+#' A plug-in type classifier for a multiclass classification of SDE paths.
 #'
 #' @param Xtrain: a training sample sample which is a matrix or a data.frame whose columns represent the diffusion paths
 #' @param ytrain: a second training sample which is a vector containing the labels of diffusion paths
@@ -91,10 +91,10 @@ SDEclassif <- function(Xtrain, ytrain, Xtest, ytest, NbClass, TimeStep, SetK, M,
     n = nrow(Xtrain)-2
     graphics::par(mfrow=c(1,2))
     #### Test data
-    graphics::plot(Xtest[,1],type='l',col=ytest[1],main="True labels",ylim=range(Xtest),xlab="",ylab="");
+    graphics::plot(Xtest[,1],type='l',col=ytest[1],main="True labels",ylim=range(Xtest),xlab="",ylab="",las=1);
     for(i in 2:ncol(Xtest)) graphics::lines(Xtest[,i],type='l',col=ytest[i])
     #### Predicted data
-    graphics::plot(Xtest[,1],type='l',col=PredClass[1],main="predicted labels",ylim=range(Xtest),xlab="",ylab="",las=1);
+    graphics::plot(Xtest[,1],type='l',col=PredClass[1],main="Predicted labels",ylim=range(Xtest),xlab="",ylab="",las=1);
     for(i in 2:ncol(Xtest)) graphics::lines(Xtest[,i],type='l',col=PredClass[i])
   }
 
