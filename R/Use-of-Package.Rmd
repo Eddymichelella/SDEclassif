@@ -1,0 +1,13 @@
+---
+title: "Nonparametric classification of the plug-in type for diffusion paths"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{How-to-use-the-package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r}
+library(SDEclassif)
+```
+

@@ -1,0 +1,21 @@
+Package: SDEclassif
+Title: Multiclass classification of trajectories of diffusion processes
+Version: 0.0.0.9000
+Authors@R: 
+    person("Eddy", "ELLA MINTSA", , "eddy-michel.ella-mintsa@univ-eiffel.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: This package provides a function named classifsde() which implements the plug-in type classifier that predicts the label of each new diffusion paths in a nonparametric setting. The construction of the nonparametric plug-in classifier is studied in Denis et al (2022) available on [https://arxiv.org/abs/2212.10259]. 
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    data.table,
+    fda,
+    knitr,
+    MASS,
+    qpdf,
+    rmarkdown,
+    rootSolve,
+    sde,
+    stats
